@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="CurrReport_PAGENOCaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CurrReport_PAGENOCaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CurrReport_PAGENOCaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Vendor_Rating_CaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Vendor_Rating_CaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Vendor_Rating_CaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FORMAT_No___CaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>FORMAT_No___CaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>FORMAT_No___CaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="QR_740_06_Rev__No___00CaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>QR_740_06_Rev__No___00CaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>QR_740_06_Rev__No___00CaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SrNo_gIntCaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>SrNo_gIntCaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>SrNo_gIntCaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Vendor_Rating__Purchase_Order_No__CaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Vendor_Rating__Purchase_Order_No__CaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Vendor_Rating__Purchase_Order_No__CaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Vendor_Rating__Purchase_Order_Date_CaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Vendor_Rating__Purchase_Order_Date_CaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Vendor_Rating__Purchase_Order_Date_CaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Vendor_Rating_QuantityCaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Vendor_Rating_QuantityCaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Vendor_Rating_QuantityCaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Vendor_Rating__Quantity_Accept_CaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Vendor_Rating__Quantity_Accept_CaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Vendor_Rating__Quantity_Accept_CaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Vendor_Rating__GRN_Expected_Recipt_Date_CaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Vendor_Rating__GRN_Expected_Recipt_Date_CaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Vendor_Rating__GRN_Expected_Recipt_Date_CaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Vendor_Rating__Quantity_Deviation_CaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Vendor_Rating__Quantity_Deviation_CaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Vendor_Rating__Quantity_Deviation_CaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Vendor_Rating__Rejected_Quantity_CaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Vendor_Rating__Rejected_Quantity_CaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Vendor_Rating__Rejected_Quantity_CaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Vendor_Rating__Quality_Factor_CaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Vendor_Rating__Quality_Factor_CaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Vendor_Rating__Quality_Factor_CaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Vendor_Rating__Delivery_Factor_CaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Vendor_Rating__Delivery_Factor_CaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Vendor_Rating__Delivery_Factor_CaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Vendor_Rating__Quantity_Factor_CaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Vendor_Rating__Quantity_Factor_CaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Vendor_Rating__Quantity_Factor_CaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Rating__Score_CaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Rating__Score_CaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Rating__Score_CaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VendorName_gTxtCaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VendorName_gTxtCaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VendorName_gTxtCaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Vendor_Rating__Vendor_No__CaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Vendor_Rating__Vendor_No__CaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Vendor_Rating__Vendor_No__CaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Average_Vendor_RatingCaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Average_Vendor_RatingCaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Average_Vendor_RatingCaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Average_Rating___Transfooter_CaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Average_Rating___Transfooter_CaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Average_Rating___Transfooter_CaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ISONo_CaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ISONo_CaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ISONo_CaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VendorRating_ItemDescriptionCaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VendorRating_ItemDescriptionCaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VendorRating_ItemDescriptionCaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VendorRating_GRNNoCaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VendorRating_GRNNoCaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VendorRating_GRNNoCaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VendorRating_GRNDateCaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VendorRating_GRNDateCaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VendorRating_GRNDateCaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VendorRating_TotalCaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VendorRating_TotalCaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VendorRating_TotalCaptionLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VendorRating_GradeCaptionLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VendorRating_GradeCaptionLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VendorRating_GradeCaptionLbl</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="FORMAT_TODAY_0_4_">
+          <DataField>FORMAT_TODAY_0_4_</DataField>
+        </Field>
+        <Field Name="COMPANYNAME">
+          <DataField>COMPANYNAME</DataField>
+        </Field>
+        <Field Name="CurrReport_PAGENO">
+          <DataField>CurrReport_PAGENO</DataField>
+        </Field>
+        <Field Name="UserId">
+          <DataField>UserId</DataField>
+        </Field>
+        <Field Name="STRSUBSTNO_Text0006_gCtx_FromDate_gDte_ToDate_gDte_">
+          <DataField>STRSUBSTNO_Text0006_gCtx_FromDate_gDte_ToDate_gDte_</DataField>
+        </Field>
+        <Field Name="Filters_gCtx">
+          <DataField>Filters_gCtx</DataField>
+        </Field>
+        <Field Name="VendorName_gTxt">
+          <DataField>VendorName_gTxt</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Vendor_No__">
+          <DataField>Vendor_Rating__Vendor_No__</DataField>
+        </Field>
+        <Field Name="ShowOnlySummary_gBln">
+          <DataField>ShowOnlySummary_gBln</DataField>
+        </Field>
+        <Field Name="PageBreakNewRec_gBln">
+          <DataField>PageBreakNewRec_gBln</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__GRN_No__">
+          <DataField>Vendor_Rating__GRN_No__</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Item_Description_">
+          <DataField>Vendor_Rating__Item_Description_</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Purchase_Order_No__">
+          <DataField>Vendor_Rating__Purchase_Order_No__</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Purchase_Order_Date_">
+          <DataField>Vendor_Rating__Purchase_Order_Date_</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__GRN_Date_">
+          <DataField>Vendor_Rating__GRN_Date_</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__GRN_Expected_Recipt_Date_">
+          <DataField>Vendor_Rating__GRN_Expected_Recipt_Date_</DataField>
+        </Field>
+        <Field Name="Vendor_Rating_Quantity">
+          <DataField>Vendor_Rating_Quantity</DataField>
+        </Field>
+        <Field Name="Vendor_Rating_QuantityFormat">
+          <DataField>Vendor_Rating_QuantityFormat</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Quantity_Accept_">
+          <DataField>Vendor_Rating__Quantity_Accept_</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Quantity_Accept_Format">
+          <DataField>Vendor_Rating__Quantity_Accept_Format</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Quantity_Deviation_">
+          <DataField>Vendor_Rating__Quantity_Deviation_</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Quantity_Deviation_Format">
+          <DataField>Vendor_Rating__Quantity_Deviation_Format</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Rejected_Quantity_">
+          <DataField>Vendor_Rating__Rejected_Quantity_</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Rejected_Quantity_Format">
+          <DataField>Vendor_Rating__Rejected_Quantity_Format</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Quality_Factor_">
+          <DataField>Vendor_Rating__Quality_Factor_</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Quality_Factor_Format">
+          <DataField>Vendor_Rating__Quality_Factor_Format</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Delivery_Factor_">
+          <DataField>Vendor_Rating__Delivery_Factor_</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Delivery_Factor_Format">
+          <DataField>Vendor_Rating__Delivery_Factor_Format</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Quantity_Factor_">
+          <DataField>Vendor_Rating__Quantity_Factor_</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Quantity_Factor_Format">
+          <DataField>Vendor_Rating__Quantity_Factor_Format</DataField>
+        </Field>
+        <Field Name="Vendor_Rating_Total">
+          <DataField>Vendor_Rating_Total</DataField>
+        </Field>
+        <Field Name="Vendor_Rating_TotalFormat">
+          <DataField>Vendor_Rating_TotalFormat</DataField>
+        </Field>
+        <Field Name="Vendor_Rating_Grade">
+          <DataField>Vendor_Rating_Grade</DataField>
+        </Field>
+        <Field Name="SrNo_gInt">
+          <DataField>SrNo_gInt</DataField>
+        </Field>
+        <Field Name="Vendor_Rating__Item_Description_2_">
+          <DataField>Vendor_Rating__Item_Description_2_</DataField>
+        </Field>
+        <Field Name="TotalOrderQtyFinal_gDec">
+          <DataField>TotalOrderQtyFinal_gDec</DataField>
+        </Field>
+        <Field Name="TotalOrderQtyFinal_gDecFormat">
+          <DataField>TotalOrderQtyFinal_gDecFormat</DataField>
+        </Field>
+        <Field Name="AvgGrade_gCod">
+          <DataField>AvgGrade_gCod</DataField>
+        </Field>
+        <Field Name="Quality_Factor__GRNCounterforClassic_gInt">
+          <DataField>Quality_Factor__GRNCounterforClassic_gInt</DataField>
+        </Field>
+        <Field Name="Quality_Factor__GRNCounterforClassic_gIntFormat">
+          <DataField>Quality_Factor__GRNCounterforClassic_gIntFormat</DataField>
+        </Field>
+        <Field Name="Delivery_Factor__GRNCounterforClassic_gInt">
+          <DataField>Delivery_Factor__GRNCounterforClassic_gInt</DataField>
+        </Field>
+        <Field Name="Delivery_Factor__GRNCounterforClassic_gIntFormat">
+          <DataField>Delivery_Factor__GRNCounterforClassic_gIntFormat</DataField>
+        </Field>
+        <Field Name="Quantity_Factor__GRNCounterforClassic_gInt">
+          <DataField>Quantity_Factor__GRNCounterforClassic_gInt</DataField>
+        </Field>
+        <Field Name="Quantity_Factor__GRNCounterforClassic_gIntFormat">
+          <DataField>Quantity_Factor__GRNCounterforClassic_gIntFormat</DataField>
+        </Field>
+        <Field Name="Total_GRNCounterforClassic_gInt">
+          <DataField>Total_GRNCounterforClassic_gInt</DataField>
+        </Field>
+        <Field Name="Total_GRNCounterforClassic_gIntFormat">
+          <DataField>Total_GRNCounterforClassic_gIntFormat</DataField>
+        </Field>
+        <Field Name="TotalAvg_gDec">
+          <DataField>TotalAvg_gDec</DataField>
+        </Field>
+        <Field Name="TotalAvg_gDecFormat">
+          <DataField>TotalAvg_gDecFormat</DataField>
+        </Field>
+        <Field Name="QtyAVG_gDec">
+          <DataField>QtyAVG_gDec</DataField>
+        </Field>
+        <Field Name="QtyAVG_gDecFormat">
+          <DataField>QtyAVG_gDecFormat</DataField>
+        </Field>
+        <Field Name="TimeAvg_gDec">
+          <DataField>TimeAvg_gDec</DataField>
+        </Field>
+        <Field Name="TimeAvg_gDecFormat">
+          <DataField>TimeAvg_gDecFormat</DataField>
+        </Field>
+        <Field Name="QltAvg_gDec">
+          <DataField>QltAvg_gDec</DataField>
+        </Field>
+        <Field Name="QltAvg_gDecFormat">
+          <DataField>QltAvg_gDecFormat</DataField>
+        </Field>
+        <Field Name="Vendor_Rating_From_Date">
+          <DataField>Vendor_Rating_From_Date</DataField>
+        </Field>
+        <Field Name="Vendor_Rating_To_Date">
+          <DataField>Vendor_Rating_To_Date</DataField>
+        </Field>
+        <Field Name="Vendor_Rating_GRN_Line_No_">
+          <DataField>Vendor_Rating_GRN_Line_No_</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

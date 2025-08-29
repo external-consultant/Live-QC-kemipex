@@ -1,0 +1,62 @@
+{
+  "id": "9cf18382-a04f-4e16-a03c-bb1330e41dd7",
+  "name": "QCs-kemipex",
+  "publisher": "ISPL",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "1d294689-c045-4c5a-a2c2-4026810571b2",
+      "name": "Kemipex Development_TableOnly",
+      "publisher": "ISPL",
+      "version": "1.0.0.0"
+    },
+    {
+  "id": "cea8e57e-050e-4880-840c-454ceb2e3f18",
+  "name": "Quality Control",
+  "publisher": "ISPL",
+  "version": "1.0.0.0"
+},
+{
+      "id": "213a67b3-a931-4d61-8ed4-8f5ccae345c3",
+      "name": "Kemipex Base App",
+      "publisher": "Kemipex FZE",
+      "version": "1.0.0.0"
+    },
+     {
+      "id": "320b1018-6c83-4a0b-bca8-6059a96fb871",
+      "name": "Standard Approval Extended",
+      "publisher": "ISPL",
+      "version": "1.0.0.0"
+    },
+     {
+    "id": "db643212-b7fb-4dd4-b5a8-cb44ac714461",
+    "name": "India GST",
+    "publisher": "Microsoft",
+    "version": "20.0.0.0"}
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "23.0.0.0",
+  "idRanges": [
+    {
+      "from": 75381,
+      "to": 75580
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "12.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
